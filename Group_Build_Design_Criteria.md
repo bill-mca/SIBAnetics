@@ -19,7 +19,15 @@ I can't find the official marking criteria anywhere! It'd be good to write up th
  - (Bill) Must not be labour-saving device
 
 # Ideals
- - (Bill) Eudaimonic AI that pushes humans to be work harder rather than allowing us to cut corners
- - (Bill) A message about the unpredictability of emergent phenomena
+ - (Bill) Eudaimonic AI that pushes humans to be better rather than allowing us to cut corners
+ - (Bill) A message about the unpredictability of emergent phenomena 
  
 # Proposals
+
+## Personal Language Model
+Learns to understand your handwriting and the idiosyncrasies of your writing. Can generate messages as though they were written by you like in the movie *Her* (it's not a super original idea). Also tells you what you need to do to improve your handwriting and cut back the idiosyncrasies in your writing. It would allow you to practice handwriting a lot more oftem as it would be quite effective at digitizing your writing so you would be able to draft all your work in hand writing. before digitizing to edit.
+
+## Sign Language Computer Interface
+[Plenty of work has been done](https://link.springer.com/article/10.1007/s11831-019-09384-2) on using AI to translate sign language. This would be using sign language as an interface to a computer so that you can interact with the computer by moving your body instead of sitting still. 
+
+I think the [X-Box Kinect](https://en.wikipedia.org/wiki/Kinect) might have already had this kind of interface to some of its software. I did a bit of research and found that it is called a Natural Interface and there is an open-source SDK called [OpenNI](https://wiki.ros.org/openni). We could buy an old X-Box Kinect off ebay for less than $30 and make a novel Natural Interface.
