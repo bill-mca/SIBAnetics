@@ -22,12 +22,12 @@ I can't find the official marking criteria anywhere! It'd be good to write up th
  - (Bill) Eudaimonic AI that pushes humans to be better rather than allowing us to cut corners
  - (Bill) A message about the unpredictability of emergent phenomena
  - (Bill) Gives insight into the emergence of consciousness
- - (Bill) Includes computer vision
+ - (Bill) Computer vision
  - (Bill) Biomimetics
  - (Bill) A really fun and interactive presentation for demo day
  - (Bill) Something for demo day that makes people move around
- - (Bill) A radiative evolutionary project rather than a linear "waterfall"
- - (Bill) Critical making: the invention, and the making of it, helps us to see the world differently.
+ - (Bill) A radiative evolutionary project rather than a linear waterfall style project
+ - (Bill) Critical making: the invention, and the making of it, helps us to reflect on current technological paradigms and our own worldviews
  - (Bill) Not aimed at commercialisation
  
 # Proposals
