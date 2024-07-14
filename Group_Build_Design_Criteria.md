@@ -62,7 +62,7 @@ Using cameras to collect time-lapse images of ant colonies. Machine learning wou
 
 ## Waving Tube Man 🕺🐙
 
-The idea is to make a waving-tube-man, wire him up to a neural network and get him to learn to move his body in an intentional way. It would probably be too hard, but the ideal would be to make him throw and catch frisbees. Getting him to block frisbees and change the periodicity of his waving to match the tempo of ambient music might be achievable. 
+The idea is to make a [waving tube man](https://www.skydancersaustralia.com.au/Sky-Dancers-Products/pink-fan-with-man), wire him up to a neural network and get him to learn to move his body in an intentional way. It would probably be too hard, but the ideal would be to make him throw and catch frisbees. Getting him to block frisbees and change the periodicity of his waving to match the tempo of ambient music might be achievable. 
 
 ![Waving Tube Man](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenBwbWhvN2F3ajVib2RhYjg4MTI1cDk5Njc1bzNvdHZtdTlramU1ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oriOfe0A84SVqwr6w/giphy.webp)
 
