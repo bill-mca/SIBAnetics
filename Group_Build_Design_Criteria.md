@@ -10,25 +10,36 @@ The Proposals section contains specific ideas for what could be built. The Const
 <!--
 I can't find the official marking criteria anywhere! It'd be good to write up the course constraints directly from the official marking criteria. For now I've just written what I could remember.  
 -->
- - (course) Must present a convincing prototype on Demo Day
- - (course) Project must be delivered within a $500 budget
- - (course) Must include a physical component
- - (course) The physical component must be built by us
- - (course) Must include a machine-learning component
- - (course) Must include cyber component
- - (Bill) Must not be labour-saving device
+ - (CYB) Must present a convincing prototype on Demo Day
+ - (CYB) Project must be delivered within a $500 budget
+ - (CYB) Must include a physical component
+ - (CYB) The physical component must be built by us
+ - (CYB) Must include a machine-learning component
+ - (CYB) Must include a computational component
+ - (BM) Must not be labour-saving device doesn't replace human capacities
+ - (SPN) No harmfull stuff
+ - (SPN) Not monotonic
+ - (BM) No dancing axolotls
 
 # Ideals
- - (Bill) Eudaimonic AI that pushes humans to be better rather than allowing us to cut corners
- - (Bill) A message about the unpredictability of emergent phenomena
- - (Bill) Gives insight into the emergence of consciousness
- - (Bill) Computer vision
- - (Bill) Biomimetics
- - (Bill) A really fun and interactive presentation for demo day
- - (Bill) Something for demo day that makes people move around
- - (Bill) A radiative evolutionary project rather than a linear waterfall style project
- - (Bill) Critical making: the invention, and the making of it, helps us to reflect on current technological paradigms and our own worldviews
- - (Bill) Not aimed at commercialisation
+ 1. (AT) Is story-driven
+ 2. (IL) Alluring
+ 3. (IL) Funny
+ 4. (AT) Biomimetics
+ 5. (BM) Critical making: the invention, and the making of it, helps us to reflect on current technological paradigms and our own worldviews
+ 6. (SPN) Respecting diversity
+ 7. (AT) Physicality in Virtual systems
+ 8. (IL) Is about ways of communicating / That context is part of meaning-making
+ 9. (SPN) Participatory
+ 10. (SPN) Question the scalability
+ 11. (SPN) Context drives scalability
+ 12. (BM) Eudaimonic AI that pushes humans to be better rather than allowing us to cut corners
+ 13. (BM) A message about the unpredictability of emergent phenomena
+ 14. (BM) Gives insight into the emergence of consciousness
+ 15. (BM) Computer vision
+ 16. (BM) A really fun and interactive presentation for demo day
+ 17. (BM) Something for demo day that makes people move around
+ 18. (BM) A radiative evolutionary project rather than a linear waterfall style project
  
 # Proposals
 
