@@ -104,7 +104,7 @@ These are some of the attractions of the project:
 - Non-linear materialism
 - Makes for a fun and interactive demo day presentation
 - Uses computer vision
-- [Soft-bodied robotics](https://en.wikipedia.org/wiki/Soft_robotics) for vulnerable people
+- [Soft-bodied robotics](https://en.wikipedia.org/wiki/Soft_robotics) is a field of research partly motivated to make robots safer for kids to play with
 - Is a cybernetic satire of conventional robotics
 
 ### MVP
