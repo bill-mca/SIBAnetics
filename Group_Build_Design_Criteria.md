@@ -81,7 +81,7 @@ The project would allow us to muck around with lots of different structures of n
 
 The cool part would be training him to move in an intentional way. Once we had something that moved in a non-deterministic way and a camera trained on it, we'd need to get the actuators to be able to assert imperfect control over the motion of the body. From there, we would add neural nets and let them work for hours watching what happens as they fiddle with different sequences of signals sent to the actuators. Hopefully, the neural net would be able to identify some patterns. For example; if you tighten the left side cord and turn off the blower, the tube man flops down to the left. If you then turn the blower on full power, he leaps up making a 90 degree arc.
 
-We'd use computer vision to map the trajectory of incoming projectiles and the neaural net would be set the goal of maximising the chance of an intercept. To make it more simple, the tube man might just be able to watch the incoming projectile and gradually adjust left/right to align his head with it and execute a block.
+We'd use computer vision to map the trajectory of incoming projectiles and the neaural net would be set the goal of maximising the chance of an intercept. To make it more simple, the tube man might just be able to watch the incoming projectile and gradually lean left/right to align his head with it and execute a block.
 
 ### Components
 - (sensor) Computer vision; maybe with depth perception to make him better at blocking projectiles
