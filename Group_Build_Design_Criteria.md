@@ -94,7 +94,7 @@ We'd use computer vision to map the trajectory of incoming projectiles and the n
 
 ### Ideals
 
-I got the idea from a [lecture by Manuel DeLanda](https://www.youtube.com/watch?v=ZC57sUilp44) where he joked that you could link a neaural network up to some sensors and train it to catch a frisbee. He went on to talk about how, in his philosophy, matter is fundamentally creative and that higher levels of emergent phenomena (biology, consciousness) work by directing natural emergence from the chaos of lower levels. A tube man's movement is typically chaotic. My idea is that, using the neural net, he will learn to direct the chaos so that his movement is a blend of intentionality and randomness. I reckon it'll freak people out if we can teach him to (sometimes) catch frisbees 😂 They'll initially percieve it as a bizzare coincidence but then they'll see him do it multiple times. 
+I got the idea from a [lecture by Manuel DeLanda](https://www.youtube.com/watch?v=ZC57sUilp44) where he joked that you could link a neural network up to some sensors and train it to catch a frisbee. He went on to talk about how, in his philosophy, matter is fundamentally creative and that higher levels of emergent phenomena (biology, consciousness) work by directing natural emergence from the chaos of lower levels. A tube man's movement is typically chaotic. My idea is that, using the neural net, he will learn to direct the chaos so that his movement is a blend of intentionality and randomness. I reckon it'll freak people out if we can teach him to (sometimes) catch frisbees 😂 They'll initially percieve it as a bizzare coincidence but then they'll see him do it multiple times. 
 
 These are some of the attractions of the project:
 - Lots of machine learning using small, custom neural nets
@@ -121,7 +121,7 @@ There would be plenty to talk about as per the ideals section.
 
 This project has a similar message to the tube man idea above. Inspired by that scene from Bladerunner, we would make several eccentric robots with a diversity of structures. We'd link each up to a neural network and teach it to move in an intentional way. 
 
-[Group of Eccentric Robots](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExenQzMWhxdjU3OXljOHltenBweHNrdmdmMjJpM3hhbzRjNmUwemphMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11cs0cHw6WnoFa/giphy.webp)
+![Group of Eccentric Robots](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExenQzMWhxdjU3OXljOHltenBweHNrdmdmMjJpM3hhbzRjNmUwemphMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11cs0cHw6WnoFa/giphy.webp)
 
 The cool thing about this one is that the MVP should be a lot easier than the tube man. It still requires us to use neural networks and probably computer vision too.
 
@@ -134,7 +134,7 @@ The cool thing about this one is that the MVP should be a lot easier than the tu
 ![Starfish bot](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGFmbGR0bHkzcTNpdjFjMjF2dnl2MzljdGFienBkZDFrdHNxMWdqaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yoJC2KU3aeiSSTvOVO/giphy.webp)
 
 ### Message
-Robots dont have to be pipedal. That consciousness can emerge from all kinds of body structures. 
+Robots dont have to be bipedal. That consciousness can emerge from all kinds of body structures. 
 
 ### Components
 - (sensor) Computer vision; I reckon a camera above that can control all the bots in the room with a god's eye view
@@ -160,6 +160,8 @@ Robots dont have to be pipedal. That consciousness can emerge from all kinds of 
 
 ### MVP
 Two bots that have learnt to move through neural networks. 
+
+![Milk Carton Bot](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3cwdDllZWhjOGZ3Y3JoNGNvand0bDVvdnNlZW82YjRqczJ3MTFwZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lj11uKKMhr4Os/giphy.webp)
 
 ### Demo Day
 Ideally there would be a room full of lots of weird robots scrambling around. When you walk near one of them it screams out and all the other ones trun and run towards you. Not all the robots are equally capable. Some of them move very slowly and some can't move in a chosen direction at all.
