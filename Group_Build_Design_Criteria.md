@@ -170,7 +170,7 @@ Ideally there would be a room full of lots of weird robots scrambling around. Wh
 
 I was surprised to discover that there are no kits available to build your own Perceptron! Surely this would be a good educational toactivity? To give people a tangible experience of wiring up a small neural network and then watching it learn to solve a simple problem.
 
-![Rosenblatt with the Perceptron](https://www.researchgate.net/profile/Nival-Kolambage/publication/345813508/figure/fig2/AS:1066355805650944@1631250444039/Frank-Rosenblatt-with-his-Mark-I-perceptronleft-and-a-graphical-representation-of.jpg)
+![Rosenblatt with the Perceptron](https://media-assets.wired.it/photos/657842036249f6225e48bd01/16:9/w_1600,c_limit/107644525.jpeg)
 
 We would repurpose [cheap microcontrollers](https://core-electronics.com.au/seeeduino-xiao-arduino-microcontroller-samd21-cortex-m0.html) to perform as perceptrons. We'd design them so that they could take up to four inputs and pass up to four outputs. Each neuron would have LEDs to indicate its status and whether it is recieving input from each connection. We'd have to design interfaces for either end. The input might be done with some custom software for a Raspberry Pi. The output might be able to be done with a simpler interface maybe just a few lights and buttons. 
 
