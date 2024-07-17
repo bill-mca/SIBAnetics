@@ -50,7 +50,6 @@ Learns to understand your handwriting and the idiosyncrasies of your writing. Ca
 IDK
 
 ### Ideals
-# Ideals
  1. (AT) Is story-driven
  6. (SPN) Respecting diversity
  8. (IL) Is about ways of communicating / That context is part of meaning-making
@@ -69,11 +68,10 @@ I think that the personal language model would be a bit lame on demo day because
 
 I think the [X-Box Kinect](https://en.wikipedia.org/wiki/Kinect) might have already had this kind of interface to some of its software. I did a bit of research and found that it is called a Natural Interface and there is an open-source SDK called [OpenNI](https://wiki.ros.org/openni). We could buy an old X-Box Kinect off ebay for less than $30 and make a novel Natural Interface.
 
-## Message
+### Message
 That in the future we will be able to interact with computers in physical ways.
 
 ### Ideals
-# Ideals
  1. (AT) Is story-driven
  5. (BM) Critical making: the invention, and the making of it, helps us to reflect on current technological paradigms and our own worldviews
  6. (SPN) Respecting diversity
@@ -93,7 +91,7 @@ This idea isn't super original because there are various tools that allow you to
 ### Message
 Computers can be designed to better enable human's to realise their full capability. 
 
-# Ideals
+### Ideals
  1. (AT) Is story-driven
  5. (BM) Critical making: the invention, and the making of it, helps us to reflect on current technological paradigms and our own worldviews
  6. (SPN) Respecting diversity
@@ -181,9 +179,7 @@ For the MVP +1  we could build a non-rigid arm that is swung around by a servo m
 ### Demo Day
 It would be a really fun presentation on demo day because people would be able to interact with the tube man by throwing different projectiles for him to block/catch. They could also change the song that he is dancing to. You could also potentially demo different versions of the neural net that demonstrate what tube man was like while he was still learning to control his body. 
 
-There would be plenty to talk about as per the ideals section.
-
-## Broken Robot Sanctuary 🤖
+## Wayward Robot Refuge 🤖
 
 This project has a similar message to the tube man idea above. Inspired by that scene from Bladerunner, we would make several eccentric robots with a diversity of structures. We'd link each up to a neural network and teach it to move in an intentional way. 
 
@@ -200,7 +196,7 @@ The cool thing about this one is that the MVP should be a lot easier than the tu
 ![Starfish bot](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGFmbGR0bHkzcTNpdjFjMjF2dnl2MzljdGFienBkZDFrdHNxMWdqaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yoJC2KU3aeiSSTvOVO/giphy.webp)
 
 ### Message
-Robots dont have to be bipedal. That consciousness can emerge from all kinds of body structures. 
+Robots don't have to be bipedal. That consciousness can emerge from all kinds of body structures. 
 
 ### Components
 - (sensor) Computer vision; I reckon a camera above that can control all the bots in the room with a god's eye view
@@ -232,7 +228,7 @@ Two bots that have learnt to move through neural networks.
 ### Demo Day
 Ideally there would be a room full of lots of weird robots scrambling around. When you walk near one of them it screams out and all the other ones trun and run towards you. Not all the robots are equally capable. Some of them move very slowly and some can't move in a chosen direction at all.
 
-## DIY Neural Net Kit 🧠
+## DIY Neural Network Kit 🧠
 
 I was surprised to discover that there are no kits available to build your own Perceptron! Surely this would be a good educational activity? To give people a tangible experience of wiring up a small neural network and then watching it learn to solve a simple problem.
 
