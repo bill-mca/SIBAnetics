@@ -202,7 +202,7 @@ Robots don't have to be bipedal. That consciousness can emerge from all kinds of
 - (sensor) Computer vision; I reckon a camera above that can control all the bots in the room with a god's eye view
 - (sensor) optionally, some proprioception to see if that makes them move better
 - (sensor) optionally, some sort of wireless sensor to allow us to call them together or disperse them
-- (actuator) servos, motors, [muscle wire](core-electronics.com.au/muscle-wire-0-005-diameter-1-foot.html) etc.
+- (actuator) servos, motors, [muscle wire](https://core-electronics.com.au/muscle-wire-0-005-diameter-1-foot.html) etc.
 - (physical) several unusual bodies
 - (physical) optionally, A body that moves in a non-deterministic way
 - (machine learning) A neural network that translates patterns of sensor data into patterns of actuation to make each bot move in purposefully.
@@ -240,7 +240,7 @@ We would repurpose [cheap microcontrollers](https://core-electronics.com.au/seee
  - How many neurons would we need to make it interesting?
  - How much would a neuron cost?
 
-It would be a tangible educational tool teaching the same concepts as Tensor Flow's [Neural Network Playground](playground.tensorflow.org).
+It would be a tangible educational tool teaching the same concepts as Tensor Flow's [Neural Network Playground](https://playground.tensorflow.org).
 
 ### Message
 That neural networks are a distinct form of computing that can perform inductive reasoning. Binary computer atchitectures can do deductive reasoning. This project will make an educational kit and a set of activities that help people to understand neural networks.
