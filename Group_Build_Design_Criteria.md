@@ -117,4 +117,45 @@ It would be a really fun presentation on demo day because people would be able t
 
 There would be plenty to talk about as per the ideals section.
 
+## DIY Neural Net Kit 🧠
 
+I was surprised to discover that there are no kits available to build your own Perceptron! Surely this would be a good educational toactivity? To give people a tangible experience of wiring up a small neural network and then watching it learn to solve a simple problem.
+
+![Rosenblatt with the Perceptron](https://www.researchgate.net/profile/Nival-Kolambage/publication/345813508/figure/fig2/AS:1066355805650944@1631250444039/Frank-Rosenblatt-with-his-Mark-I-perceptronleft-and-a-graphical-representation-of.jpg)
+
+We would repurpose [cheap microcontrollers](https://core-electronics.com.au/seeeduino-xiao-arduino-microcontroller-samd21-cortex-m0.html) to perform as perceptrons. We'd design them so that they could take up to four inputs and pass up to four outputs. Each neuron would have LEDs to indicate its status and whether it is recieving input from each connection. We'd have to design interfaces for either end. The input might be done with some custom software for a Raspberry Pi. The output might be able to be done with a simpler interface maybe just a few lights and buttons. 
+
+ - Would we be able to set it up to do back propogation?
+ - How many neurons would we need to make it interesting?
+ - How much would a neuron cost?
+
+It would be a tangible educational tool teaching the same concepts as Tensor Flow's [Neural Network Playground](playground.tensorflow.org).
+
+### Message
+That neural networks are a distinct form of computing that can perform inductive reasoning. Binary computer atchitectures can do deductive reasoning. This project will make an educational kit and a set of activities that help people to understand neural networks.
+
+### Components
+- (sensor) The raspberry pi input device will be transorming sensing data into a simple format for the network. 
+- (sensor) buttons at the output for training
+- (actuator) lights to allow users to understand the operation of the network
+- (actuator) optionally, can attach the ouput to some actuator to demonstrate neural networks in robotics
+- (physical) a network of neurons that can be re-arranged by users
+- (machine learning) it's a bloody neural network! 😁
+
+### Ideals
+ 2. (IL) Alluring
+ 4. (AT) Biomimetics
+ 5. (BM) Critical making: the invention, and the making of it, helps us to reflect on current technological paradigms and our own worldviews
+ 6. (SPN) Respecting diversity
+ 7. (AT) Physicality in Virtual systems
+ 9. (SPN) Participatory
+ 12. (BM) Eudaimonic AI that pushes humans to be better rather than allowing us to cut corners
+ 14. (BM) Gives insight into the emergence of consciousness
+ 16. (BM) A really fun and interactive presentation for demo day
+ 17. (BM) Something for demo day that makes people move around
+
+### MVP
+Four neurons wired together and an input interface.
+
+### Demo Day
+Set up as a robotics classroom and people are encouraged to try reconfiguring the network to solve a problem. If the neurons are cheap and easy to make we might be able to have a couple of networks going at the same time to allow many people to cooperate.
