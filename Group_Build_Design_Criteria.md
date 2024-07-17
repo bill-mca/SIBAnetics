@@ -52,11 +52,11 @@ I think that the personal language model would be a bit lame on demo day because
 ## Sign Language Computer Interface 🫰🖥
 [Plenty of work has been done](https://link.springer.com/article/10.1007/s11831-019-09384-2) on using AI to translate sign language. This would be using sign language as an interface to a computer so that you can interact with the computer by moving your body instead of sitting still. This is, however, still a symbolic interface to your computer. 
 
-![Kinect data viz. example](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXB0NjNscnd3NHJlOHZ1bGhoOHN5bndjaGRhcDYwZ205Y3VzYWp1OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jh9FGY437Fd04/giphy.webp)
+![Kinect data visualization example](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXB0NjNscnd3NHJlOHZ1bGhoOHN5bndjaGRhcDYwZ205Y3VzYWp1OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jh9FGY437Fd04/giphy.webp)
 
 I think the [X-Box Kinect](https://en.wikipedia.org/wiki/Kinect) might have already had this kind of interface to some of its software. I did a bit of research and found that it is called a Natural Interface and there is an open-source SDK called [OpenNI](https://wiki.ros.org/openni). We could buy an old X-Box Kinect off ebay for less than $30 and make a novel Natural Interface.
 
-## Hippocampus filing system 🌊🏇🗃
+## Hippocampus Filing System 🌊🏇🗃
 The way we store documents on our computers is a skewmorph of the way it was done when people used to write stuff down on dead trees 📃. I waste a lot of time trying to find documents in my own computer's filing system and when I have shared folders with other people it gets really confusing. On the other hand, I can remember where places are very well. I've been able to look at maps of cities that I visited, for a few days 5 years ago, and still remember all the places I went and the streets that I walked. If you were able to store your digital files in your physical environment as an augmented reality overlay, it'd be a lot easier to find stuff especially if there'd been a long time since you last retrieved it. There is evidence that spatial cognition and memory occurs in the [hippocampus](https://en.wikipedia.org/wiki/Hippocampus#Function) and is quite different from other abstract forms of thought.
 
 This idea isn't super original because there are various tools that allow you to organise geotagged photos this way. Extending it to other types of media and making the location arbitrary wrt composition is nove but might also greatly reduce the utility.
@@ -168,11 +168,11 @@ Ideally there would be a room full of lots of weird robots scrambling around. Wh
 
 ## DIY Neural Net Kit 🧠
 
-I was surprised to discover that there are no kits available to build your own Perceptron! Surely this would be a good educational toactivity? To give people a tangible experience of wiring up a small neural network and then watching it learn to solve a simple problem.
+I was surprised to discover that there are no kits available to build your own Perceptron! Surely this would be a good educational activity? To give people a tangible experience of wiring up a small neural network and then watching it learn to solve a simple problem.
 
 ![Rosenblatt with the Perceptron](https://media-assets.wired.it/photos/657842036249f6225e48bd01/16:9/w_1600,c_limit/107644525.jpeg)
 
-We would repurpose [cheap microcontrollers](https://core-electronics.com.au/seeeduino-xiao-arduino-microcontroller-samd21-cortex-m0.html) to perform as perceptrons. We'd design them so that they could take up to four inputs and pass up to four outputs. Each neuron would have LEDs to indicate its status and whether it is recieving input from each connection. We'd have to design interfaces for either end. The input might be done with some custom software for a Raspberry Pi. The output might be able to be done with a simpler interface maybe just a few lights and buttons. 
+We would repurpose [cheap microcontrollers](https://core-electronics.com.au/seeeduino-xiao-arduino-microcontroller-samd21-cortex-m0.html) to perform as nodes in a perceptron. We'd design them so that they could take up to four inputs and pass up to four outputs. Each neuron would have LEDs to indicate its status and whether it is recieving input from each connection. We'd have to design interfaces for either end. The input might be done with some custom software for a Raspberry Pi. The output might be able to be done with a simpler interface maybe just a few lights and buttons. 
 
  - Would we be able to set it up to do back propogation?
  - How many neurons would we need to make it interesting?
