@@ -117,6 +117,53 @@ It would be a really fun presentation on demo day because people would be able t
 
 There would be plenty to talk about as per the ideals section.
 
+## Broken Robot Sanctuary 🤖
+
+This project has a similar message to the tube man idea above. Inspired by that scene from Bladerunner, we would make several eccentric robots with a diversity of structures. We'd link each up to a neural network and teach it to move in an intentional way. 
+
+[Group of Eccentric Robots](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExenQzMWhxdjU3OXljOHltenBweHNrdmdmMjJpM3hhbzRjNmUwemphMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11cs0cHw6WnoFa/giphy.webp)
+
+The cool thing about this one is that the MVP should be a lot easier than the tube man. It still requires us to use neural networks and probably computer vision too.
+
+**Here are some concepts of robots that move in unusual ways:**
+
+![Snake Bot](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnJld3FlM3FhN3hpZXkxbXU2aWV4d2VrODg2dDA1N3NoY2g2ajl3cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QqDNojdvH30wYs8V3K/giphy.webp)
+
+![Spider bot](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjZxaG9uY283OGR5ajVsMnVhYjYydjc2ZXYwemY3YW5veDhqZnRyayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5MpuL8VoieiQM/giphy.webp)
+
+![Starfish bot](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGFmbGR0bHkzcTNpdjFjMjF2dnl2MzljdGFienBkZDFrdHNxMWdqaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yoJC2KU3aeiSSTvOVO/giphy.webp)
+
+### Message
+Robots dont have to be pipedal. That consciousness can emerge from all kinds of body structures. 
+
+### Components
+- (sensor) Computer vision; I reckon a camera above that can control all the bots in the room with a god's eye view
+- (sensor) optionally, some proprioception to see if that makes them move better
+- (sensor) optionally, some sort of wireless sensor to allow us to call them together or disperse them
+- (actuator) servos, motors, [muscle wire](core-electronics.com.au/muscle-wire-0-005-diameter-1-foot.html) etc.
+- (physical) several unusual bodies
+- (physical) optionally, A body that moves in a non-deterministic way
+- (machine learning) A neural network that translates patterns of sensor data into patterns of actuation to make each bot move in purposefully.
+
+### Ideals
+ 1. (AT) Is story-driven
+ 2. (IL) Alluring
+ 3. (IL) Funny
+ 4. (AT) Biomimetics
+ 6. (SPN) Respecting diversity
+ 7. (AT) Physicality in Virtual systems
+ 11. (SPN) Context drives scalability
+ 13. (BM) A message about the unpredictability of emergent phenomena
+ 14. (BM) Gives insight into the emergence of consciousness
+ 15. (BM) Computer vision
+ 18. (BM) A radiative evolutionary project rather than a linear waterfall style project
+
+### MVP
+Two bots that have learnt to move through neural networks. 
+
+### Demo Day
+Ideally there would be a room full of lots of weird robots scrambling around. When you walk near one of them it screams out and all the other ones trun and run towards you. Not all the robots are equally capable. Some of them move very slowly and some can't move in a chosen direction at all.
+
 ## DIY Neural Net Kit 🧠
 
 I was surprised to discover that there are no kits available to build your own Perceptron! Surely this would be a good educational toactivity? To give people a tangible experience of wiring up a small neural network and then watching it learn to solve a simple problem.
