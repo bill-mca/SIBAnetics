@@ -46,6 +46,19 @@ I can't find the official marking criteria anywhere! It'd be good to write up th
 ## Personal Language Model 🦭🈶
 Learns to understand your handwriting and the idiosyncrasies of your writing. Can generate messages as though they were written by you like in the movie *Her* (it's not a super original idea). Also tells you what you need to do to improve your handwriting and cut back the idiosyncrasies in your writing. It would allow you to practice handwriting a lot more oftem as it would be quite effective at digitizing your writing so you would be able to draft all your work in hand writing before digitizing to edit.
 
+### Message
+IDK
+
+### Ideals
+# Ideals
+ 1. (AT) Is story-driven
+ 6. (SPN) Respecting diversity
+ 8. (IL) Is about ways of communicating / That context is part of meaning-making
+ 10. (SPN) Question the scalability
+ 11. (SPN) Context drives scalability
+ 12. (BM) Eudaimonic AI that pushes humans to be better rather than allowing us to cut corners
+ 15. (BM) Computer vision
+
 ### Demo day
 I think that the personal language model would be a bit lame on demo day because people would have to spend a it of time handwriting something like *the quick brown fox...* so that the model had enough of your data to start working.
 
@@ -56,10 +69,38 @@ I think that the personal language model would be a bit lame on demo day because
 
 I think the [X-Box Kinect](https://en.wikipedia.org/wiki/Kinect) might have already had this kind of interface to some of its software. I did a bit of research and found that it is called a Natural Interface and there is an open-source SDK called [OpenNI](https://wiki.ros.org/openni). We could buy an old X-Box Kinect off ebay for less than $30 and make a novel Natural Interface.
 
+## Message
+That in the future we will be able to interact with computers in physical ways.
+
+### Ideals
+# Ideals
+ 1. (AT) Is story-driven
+ 5. (BM) Critical making: the invention, and the making of it, helps us to reflect on current technological paradigms and our own worldviews
+ 6. (SPN) Respecting diversity
+ 7. (AT) Physicality in virtual systems
+ 8. (IL) Is about ways of communicating / That context is part of meaning-making
+ 9. (SPN) Participatory
+ 11. (SPN) Context drives scalability
+ 15. (BM) Computer vision
+ 16. (BM) A really fun and interactive presentation for demo day
+ 17. (BM) Something for demo day that makes people move around
+
 ## Hippocampus Filing System 🌊🏇🗃
 The way we store documents on our computers is a skewmorph of the way it was done when people used to write stuff down on dead trees 📃. I waste a lot of time trying to find documents in my own computer's filing system and when I have shared folders with other people it gets really confusing. On the other hand, I can remember where places are very well. I've been able to look at maps of cities that I visited, for a few days 5 years ago, and still remember all the places I went and the streets that I walked. If you were able to store your digital files in your physical environment as an augmented reality overlay, it'd be a lot easier to find stuff especially if there'd been a long time since you last retrieved it. There is evidence that spatial cognition and memory occurs in the [hippocampus](https://en.wikipedia.org/wiki/Hippocampus#Function) and is quite different from other abstract forms of thought.
 
 This idea isn't super original because there are various tools that allow you to organise geotagged photos this way. Extending it to other types of media and making the location arbitrary wrt composition is nove but might also greatly reduce the utility.
+
+### Message
+Computers can be designed to better enable human's to realise their full capability. 
+
+# Ideals
+ 1. (AT) Is story-driven
+ 5. (BM) Critical making: the invention, and the making of it, helps us to reflect on current technological paradigms and our own worldviews
+ 6. (SPN) Respecting diversity
+ 7. (AT) Physicality in Virtual systems
+ 8. (IL) Is about ways of communicating / That context is part of meaning-making
+ 10. (SPN) Question the scalability
+ 11. (SPN) Context drives scalability
 
 ### Components
 - (physical) The only physical component is the geography of planet earth.
@@ -70,6 +111,21 @@ You could get people to play with a world map and a complex file structure to se
 
 ## Ento-meteorology 🐜🌦
 Using cameras to collect time-lapse images of ant colonies. Machine learning would look for patterns in the behaviour of the ants or the structure of their colonies. It would relate this to time-series weather data. The idea is that the model would learn to forecast the weather based on the behaviour of ants. I've heard that ants prepare their nests for heavy rain by building levees around the openings. 
+
+### Message
+That there are patterns in the natural world that we do not, and might never, understand. Connectionist AI can help to open us to the counter-intuitive and mysterious in the natural world.
+
+### Ideals
+ 1. (AT) Is story-driven
+ 2. (IL) Alluring
+ 4. (AT) Biomimetics
+ 5. (BM) Critical making: the invention, and the making of it, helps us to reflect on current technological paradigms and our own worldviews
+ 6. (SPN) Respecting diversity
+ 8. (IL) Is about ways of communicating / That context is part of meaning-making
+ 11. (SPN) Context drives scalability
+ 13. (BM) A message about the unpredictability of emergent phenomena
+ 14. (BM) Gives insight into the emergence of consciousness
+ 15. (BM) Computer vision
 
 ## Waving Tube Man 🕺🐙
 
@@ -83,6 +139,16 @@ The cool part would be training him to move in an intentional way. Once we had s
 
 We'd use computer vision to map the trajectory of incoming projectiles and the neaural net would be set the goal of maximising the chance of an intercept. To make it more simple, the tube man might just be able to watch the incoming projectile and gradually lean left/right to align his head with it and execute a block.
 
+I got the idea from a [lecture by Manuel DeLanda](https://www.youtube.com/watch?v=ZC57sUilp44) where he joked that you could link a neural network up to some sensors and train it to catch a frisbee. He went on to talk about how, in his philosophy, matter is fundamentally creative and that higher levels of emergent phenomena (biology, consciousness) work by directing natural emergence from the chaos of lower levels. A tube man's movement is typically chaotic. My idea is that, using the neural net, he will learn to direct the chaos so that his movement is a blend of intentionality and randomness. I reckon it'll freak people out if we can teach him to (sometimes) catch frisbees 😂 They'll initially percieve it as a bizzare coincidence but then they'll see him do it multiple times. 
+
+These concepts are also part of it:
+- [Soft-bodied robotics](https://en.wikipedia.org/wiki/Soft_robotics) is a field of research partly motivated to make robots safer for kids to play with
+- Chaos theory / far from equilibrium thermodynamics
+- Non-linear materialism
+
+### Message
+That consciousess emerges from the body. That connectionist AI is a unique tool that will change the way we percieve the world. 
+
 ### Components
 - (sensor) Computer vision; maybe with depth perception to make him better at blocking projectiles
 - (sensor) optionally, some proprioception to see if that makes him move better
@@ -93,20 +159,20 @@ We'd use computer vision to map the trajectory of incoming projectiles and the n
 - (machine learning) A neural network that translates patterns of sensor data into patterns of actuation that achieve goals
 
 ### Ideals
-
-I got the idea from a [lecture by Manuel DeLanda](https://www.youtube.com/watch?v=ZC57sUilp44) where he joked that you could link a neural network up to some sensors and train it to catch a frisbee. He went on to talk about how, in his philosophy, matter is fundamentally creative and that higher levels of emergent phenomena (biology, consciousness) work by directing natural emergence from the chaos of lower levels. A tube man's movement is typically chaotic. My idea is that, using the neural net, he will learn to direct the chaos so that his movement is a blend of intentionality and randomness. I reckon it'll freak people out if we can teach him to (sometimes) catch frisbees 😂 They'll initially percieve it as a bizzare coincidence but then they'll see him do it multiple times. 
-
-These are some of the attractions of the project:
-- Lots of machine learning using small, custom neural nets
-- Biomimetics, as we'd be trying to replicate the way that simple organisms make intentional movements
-- Embodied intelligence as the neural net would have to learn to understand and manipulate chaotic patterns to make intentional movements 
-- Chaos theory / far from equilibrium thermodynamics
-- Non-linear materialism
-- Makes for a fun and interactive demo day presentation
-- Uses computer vision
-- [Soft-bodied robotics](https://en.wikipedia.org/wiki/Soft_robotics) is a field of research partly motivated to make robots safer for kids to play with
-- Is a cybernetic satire of conventional robotics
-
+ 2. (IL) Alluring
+ 3. (IL) Funny
+ 4. (AT) Biomimetics
+ 5. (BM) Critical making: the invention, and the making of it, helps us to reflect on current technological paradigms and our own worldviews
+ 6. (SPN) Respecting diversity
+ 7. (AT) Physicality in virtual systems
+ 9. (SPN) Participatory
+ 11. (SPN) Context drives scalability
+ 14. (BM) Gives insight into the emergence of consciousness
+ 15. (BM) Computer vision
+ 16. (BM) A really fun and interactive presentation for demo day
+ 17. (BM) Something for demo day that makes people move around
+ 19. (Nobody) Make our project a parody of conventional robotics
+     
 ### MVP
 For the MVP we could just make a bot that moves up and down a rail and can block a tennis ball that is rolled towards it. It would use a camera as a sensor and the machine learning would kinda be redundant because the problem would be quite deterministic 🤷
 
