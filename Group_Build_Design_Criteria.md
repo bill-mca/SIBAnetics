@@ -147,15 +147,6 @@ These concepts are also part of it:
 ### Message
 That consciousess emerges from the body. That connectionist AI is a unique tool that will change the way we percieve the world. 
 
-### Components
-- (sensor) Computer vision; maybe with depth perception to make him better at blocking projectiles
-- (sensor) optionally, some proprioception to see if that makes him move better
-- (sensor) optionally, a microphone to listen for music to dance to
-- (actuator) blowers, fans, pumps, valves, etc. to animate his body
-- (actuator) optionally, little cords that can be wound / unwound by motors
-- (physical) a non-rigid body that moves in a non-deterministic way
-- (machine learning) A neural network that translates patterns of sensor data into patterns of actuation that achieve goals
-
 ### Ideals
  2. (IL) Alluring
  3. (IL) Funny
@@ -170,6 +161,15 @@ That consciousess emerges from the body. That connectionist AI is a unique tool 
  16. (BM) A really fun and interactive presentation for demo day
  17. (BM) Something for demo day that makes people move around
  19. (Nobody) Make our project a parody of conventional robotics
+
+### Components
+- (sensor) Computer vision; maybe with depth perception to make him better at blocking projectiles
+- (sensor) optionally, some proprioception to see if that makes him move better
+- (sensor) optionally, a microphone to listen for music to dance to
+- (actuator) blowers, fans, pumps, valves, etc. to animate his body
+- (actuator) optionally, little cords that can be wound / unwound by motors
+- (physical) a non-rigid body that moves in a non-deterministic way
+- (machine learning) A neural network that translates patterns of sensor data into patterns of actuation that achieve goals
      
 ### MVP
 For the MVP we could just make a bot that moves up and down a rail and can block a tennis ball that is rolled towards it. It would use a camera as a sensor and the machine learning would kinda be redundant because the problem would be quite deterministic 🤷
