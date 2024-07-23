@@ -272,3 +272,26 @@ Four neurons wired together and an input interface.
 
 ### Demo Day
 Set up as a robotics classroom and people are encouraged to try reconfiguring the network to solve a problem. If the neurons are cheap and easy to make we might be able to have a couple of networks going at the same time to allow many people to cooperate.
+
+## Template 🧠
+
+some background info about the idea
+
+### Message
+What is the main talking point for demo day?
+
+### Components
+- (sensor) camera to detect movement
+- (actuator) LEDs to scare away pigeons
+- (actuator) a servo motor to open the food hatch
+- (physical) a self navigating advertising blimp
+- (machine learning) ????
+
+### Ideals
+ [[Copy our joint list of ideals from the top and then shorten it by cutting out any that it doesn't meet.]]
+
+### MVP
+Describe an MVP that would achieve the message and how we could go from the MVP to the more ambitious project
+
+### Demo Day
+Describe what people's experience would be on demo day.
