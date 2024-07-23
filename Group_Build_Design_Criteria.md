@@ -197,6 +197,8 @@ The cool thing about this one is that the MVP should be a lot easier than the tu
 
 ![Starfish bot](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGFmbGR0bHkzcTNpdjFjMjF2dnl2MzljdGFienBkZDFrdHNxMWdqaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yoJC2KU3aeiSSTvOVO/giphy.webp)
 
+[![Slinky Bot](https://cdn.thingiverse.com/renders/13/89/43/ca/73/slinky2.001_display_large.jpg)](https://www.thingiverse.com/thing:98091)
+
 ### Message
 Robots don't have to be bipedal. That consciousness can emerge from all kinds of body structures. 
 
