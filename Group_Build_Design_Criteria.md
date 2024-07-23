@@ -40,6 +40,8 @@ I can't find the official marking criteria anywhere! It'd be good to write up th
  16. (BM) A really fun and interactive presentation for demo day
  17. (BM) Something for demo day that makes people move around
  18. (BM) A radiative evolutionary project rather than a linear waterfall style project
+ 19. (IL) Intelligence amplification
+ 20. (SPN) An easy to use off-ramp to escape from social media echo chambers
  
 # Proposals
 
