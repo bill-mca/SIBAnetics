@@ -273,6 +273,36 @@ Four neurons wired together and an input interface.
 ### Demo Day
 Set up as a robotics classroom and people are encouraged to try reconfiguring the network to solve a problem. If the neurons are cheap and easy to make we might be able to have a couple of networks going at the same time to allow many people to cooperate.
 
+## Tube-Man Mimic 🐙🪞👬
+
+ - This combines some of the ideas of the sign-language computer interface with the inflatable robotic used car salesman.
+ - Instead of catching frisbees, the tube man mimics the poses of humans.
+ - As with the original idea, he learns to control his own body via a neural network. There is a basic vocabulary of poses that he can imitate.
+ - There are plenty of projects on gesture-recognition that could be used to drive the mimicry (e.g. [here](https://github.com/TianzhongSong/Real-Time-Action-Recognition?tab=readme-ov-file), [here](https://github.com/LZQthePlane/Online-Realtime-Action-Recognition-based-on-OpenPose) and [here](https://github.com/CMU-Perceptual-Computing-Lab/openpose?tab=readme-ov-file). Hopefully the code could be adapted to recognise tube-man's gestures during the training phase.
+
+![Gesture Recognition Example](https://github.com/TianzhongSong/Real-Time-Action-Recognition/raw/master/files/pose1.gif)
+
+### Message
+That consciousess emerges from the body. 
+That connectionist AI is a unique tool that will change the way we percieve the world. 
+
+### Components
+- (sensor) camera to detect human poses
+- (machine learing) gesture recognition.
+- Otherwise the same as tube-man
+
+### Ideals
+  - Much the same as tube-man
+
+### MVP
+Needs some thought.
+
+Maybe a screen showing your posture converted into tube-man form. The stretch version could be to have a tube-octopus instead of a tube-man and have the octopus mimic your poses.
+
+### Demo Day
+Stand in front of tube-man and watch him try to copy you. There could maybe be a flash=mob of multiple tube-men all mimicing the user. 
+
+
 ## Template 🧠
 
 some background info about the idea
