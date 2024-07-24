@@ -17,7 +17,7 @@ I can't find the official marking criteria anywhere! It'd be good to write up th
  - (CYB) Must include a machine-learning component
  - (CYB) Must include a computational component
  - (BM) Must not be labour-saving device doesn't replace human capacities
- - (SPN) No harmfull stuff
+ - (SPN) No harmful stuff
  - (SPN) Not monotonic
  - (BM) No dancing axolotls
 
@@ -292,7 +292,7 @@ That connectionist AI is a unique tool that will change the way we percieve the 
 - (sensor) camera to detect human poses
 - (machine learing) gesture recognition.
 - Otherwise the same as tube-man
-x
+
 ### Ideals
   - Much the same as tube-man
 
@@ -302,8 +302,7 @@ Needs some thought.
 Maybe a screen showing your posture converted into tube-man form. The stretch version could be to have a tube-octopus instead of a tube-man and have the octopus mimic your poses.
 
 ### Demo Day
-Stand in front of tube-man and watch him try to copy you. There could maybe be a flash=mob of multiple tube-men all mimicing the user. 
-
+Stand in front of tube-man and watch him try to copy you. There could maybe be a flash=mob of multiple tube-men all mimicing the user.
 
 ## Template 🧠
 
@@ -359,9 +358,9 @@ Hearing aids aren’t connected to vision in any way, so even though sound is ma
 			Lipreading data Set:   https://paperswithcode.com/task/lipreading
 
 ### Ideals
-1. (IL) Augmented Intelligence
-2. (BM) Includes a neural network
-3. (SPN) Inclusive
+- (IL) Augmented Intelligence
+- (BM) Includes a neural network
+- (SPN) Inclusive
 
 King, AJ, Hammond-Kenny, A, & Nodal, FR, 2020, ‘Correction to: Multisensory Processing in the Auditory Cortex’, in A. K. C. Lee, M. T. Wallace, A. B. Coffin, A. N. Popper, & R. R. Fay (eds.), Multisensory Processes, vol. 68, pp. C1–C1, Springer International Publishing, Cham, doi: 10.1007/978-3-030-10461-0_13.
 Wallace, MT, 2017, ‘Cooperation between hearing and vision in people with cochlear implants’, Proceedings of the National Academy of Sciences, vol. 114, no. 38, pp. 10003–10005, doi: 10.1073/pnas.1712810114.
@@ -370,4 +369,37 @@ King, D, n.d., dlib: A toolkit for making real world machine learning and data a
 Mark Pesce mentioned during his talk:
     * **Meta Rayban spectacles:**  Equipped with cameras, microphones, and air phones, effectively becoming "eyes and ears in the cloud."
     * **Limitless device:**  Small, clip-on tag that continuously listens to surroundings and transmits audio data to the cloud.
+
+## Age Assurance Blood Pact
+
+The Australian Government has recently set up a taskforce to explore pathways towards age assurance measures that addresses access to age-inappropriate content. Major concerns from Government, civil society, and industry include privacy, technical feasibility, and data security...etc. Another way to determine someone's age is through the analysis of levels of certain proteins in someone's blood. This method of assurance provides a more secure way to assure someone's age, as their DNA materials are much less easily identifiable in the event of a data leak by the average citizen.
+
+![Sleeping Beauty pricking her finger](https://www.artnet.com/WebServices/images/ll00150lldK86FFgPNECfDrCWvaHBOcmBM/john-dickson-batten-sleeping-beauty:-the-princess-pricks-her-finger.jpg)
+
+### Message
+We are providing an alternative to age assurance measures, to provide appropriate barriers to age-inappropriate content while ensuring those who should have access can do so despite bureaucratic barriers such as government-issued IDs.
+
+### Components
+- (Sensors): blood sample kit
+- (Actuator): 
+- (Machine Learning): blood protein analysis that allows for speedy determination of someone's age through levels of specific proteins 
+
+### Ideals
+- (IL) Alluring
+- (BM) Critical making
+- (SPN) Respecting diversity
+- (AT) Physicality in Virtual systems
+- (SPN) Participatory
+- (SPN) Context drives scalability
+- (BM) Eudaimonic AI that pushes humans to be better rather than allowing us to cut corners
+- (BM) A really fun and interactive presentation for demo day
+- (BM) Something for demo day that makes people move around
+- (BM) A radiative evolutionary project rather than a linear waterfall style project
+- (IL) Intelligence amplification
+
+### MVP
+Blood sample kit connected to monitor that tells user (correctly) if they are above or below 18 years of age.
+
+### Demo Day
+Set up blood sample kits that are connected to a computer and monitor. Each user will of course be using a new blood sample kit. The user will prick their finger to provide a small sample of blood. The blood will then be analysed and results fed back to the user on the monitor.
 
