@@ -328,14 +328,15 @@ Describe an MVP that would achieve the message and how we could go from the MVP 
 ### Demo Day
 Describe what people's experience would be on demo day.
 
+## Health and Wellbeing
 2024 CPS Group Project Proposal from Amanda
-Theme: Health and Wellbeing
 
+### Abstract
 How are our senses combined?
 
-Do we perceive all that we see?
-Are we able to hear all the sounds that inundate us?
-How do we separate what we need from the excess?
+- Do we perceive all that we see?
+- Are we able to hear all the sounds that inundate us?
+- How do we separate what we need from the excess?
 
 “The capacity of the brain to combine and integrate information provided
 by the different sensory systems has a profound impact on perception and behavior.
@@ -346,20 +347,21 @@ stimuli can make it easier to localize sounds or to understand speech, benefits 
 most apparent when auditory signals are weak or degraded by the presence of back-
 ground noise.” - King, AJ
 
-Motivation:  I want to help others who are hard of hearing due to the brain reorganising sound responding to the addition of a foreign object or new device.
+### Message/Motivation
+I want to help others who are hard of hearing due to the brain reorganising sound responding to the addition of a foreign object or new device.
 Hearing aids aren’t connected to vision in any way, so even though sound is magnified, it is not focused.  
 
-Sensors:  	microphone
-		camera 
-
-Actuators:   screen
-
-Computation:  	Neural Net Whisper:  https://openai.com/index/whisper/
+### Components
+- (Sensors): microphone
+- (Sensors): camera 
+- (Actuator): screen
+- (Computation):  	Neural Net Whisper:  https://openai.com/index/whisper/
 			Lipreading data Set:   https://paperswithcode.com/task/lipreading
 
-For Izak:  Augmented Intelligence
-For Bill:  Includes a neural network
-For Shi:  Inclusive
+### Ideals
+1. (IL) Augmented Intelligence
+2. (BM) Includes a neural network
+3. (SPN) Inclusive
 
 King, AJ, Hammond-Kenny, A, & Nodal, FR, 2020, ‘Correction to: Multisensory Processing in the Auditory Cortex’, in A. K. C. Lee, M. T. Wallace, A. B. Coffin, A. N. Popper, & R. R. Fay (eds.), Multisensory Processes, vol. 68, pp. C1–C1, Springer International Publishing, Cham, doi: 10.1007/978-3-030-10461-0_13.
 Wallace, MT, 2017, ‘Cooperation between hearing and vision in people with cochlear implants’, Proceedings of the National Academy of Sciences, vol. 114, no. 38, pp. 10003–10005, doi: 10.1073/pnas.1712810114.
@@ -368,3 +370,4 @@ King, D, n.d., dlib: A toolkit for making real world machine learning and data a
 Mark Pesce mentioned during his talk:
     * **Meta Rayban spectacles:**  Equipped with cameras, microphones, and air phones, effectively becoming "eyes and ears in the cloud."
     * **Limitless device:**  Small, clip-on tag that continuously listens to surroundings and transmits audio data to the cloud.
+
