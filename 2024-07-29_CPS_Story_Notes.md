@@ -69,3 +69,12 @@ We went around the circle taking turns to give our opinions on the three project
     - S- The message is a bit vague
     - I+ swarm science is really cool
     - I+ I reckon the message is about emergence from interactions amongst diverse actors
+  
+# Voting
+
+![Izak, Amanda and Shi cast their votes](src/2024-07-29_votes_1.png)
+![Bill casts his vote](src/2024-07-29_votes_2.png)
+
+# Outcome
+
+We decided to go with the **Speech to Text** idea. We scheduled another meeting on the 1st of August to confirm that we were all happy with the decision.  
