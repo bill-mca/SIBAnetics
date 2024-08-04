@@ -71,6 +71,7 @@ We went around the circle taking turns to give our opinions on the three project
     - I+ I reckon the message is about emergence from interactions amongst diverse actors
   
 # Voting
+We agreed that we wanted a bit of time to think about each other's comments. We decided to vote by preference by 8pm of that night. Bill was late and cast his vote the following morning.
 
 ![Izak, Amanda and Shi cast their votes](src/2024-07-29_votes_1.png)
 ![Bill casts his vote](src/2024-07-29_votes_2.png)
