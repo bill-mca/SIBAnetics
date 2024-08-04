@@ -1,4 +1,5 @@
 # Initial discussion of ideas
+first we quickly ran through everything on our [list of ideas](Group_Build_Design_Criteria.md) to establish which of the ideas we were still keen on. if two of us were keen on the idea we put it on the short list.
  - Blood idea
  - Personal Language Model
  - Sign Language Interface
@@ -10,12 +11,17 @@
  - Wayward Robot Refuge		
 
 # Discussion of the short list 
+Based on quickly running through the long list of ideas We decided that the short list was:
+1. The DIY Neural Network Kit
+2. The lip Reading Hearing Aid
+3. The Wayward Robot refuge
 
 ## DIY Neural Network Kit 		
 Bill likes this the best. Microcontroller kit.  3 or 4 stations - tensor flow playground vs one station unlearning your ontology. We are building physical neural network made of microcontrollers. 
 Beyond that we are building an educational kit.  What are the sensors and actuators?  Solve a real world problem.  
 
 # Our thoughts on the short list
+We went around the circle taking turns to give our opinions on the three projects on the short list. We each said something good and something bad or scary about each of the ideas the thoughts are noted below.
 
 ## Shi's Notes
 
