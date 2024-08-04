@@ -45,3 +45,27 @@ We went around the circle taking turns to give our opinions on the three project
  2. **Speech to text** - very feasible.  You could have a wearable and a random.  Maybe one screen that combines random person - regardless of what you are doing it is a spyware.   People are engaged in the room, even though they are not engaged with any of us personally.
  3. **Wayward Robot** - People can watch the chaos or non-chaos play out.  Referencing swarm science is really cool.  I reckon the message is about emergence from interactions amongst diverse actors.  The message is about emergence from interactions amongst diverse actors.
 
+## Bill's notes
+1. Neural Nets
+    - B- worried it is too hard to explain
+    - B I'm passionate about the philosophy
+    - A I like that I will learn
+    - S could integrate the wayward robot refuge.
+    - S- The message seems harder to get across in a short time
+    - I+ can be done a few different ways and can 
+    - I- Older demographic might not want to play with it. 
+2. Speech to text
+    - B+ I like that it is a clear positive message
+    - A- Risky MVP
+    - B- demo day too linear
+    - S+ message is good
+    - S- the demo day might be too crowded
+    - I+ I reckon it is very feasible
+    - I+ we can have a non-wearable part
+    - I- it can also be used as a surveilance tool
+3. Wayward robots
+    - B Relatively easy MVP
+    - A Alluring
+    - S- The message is a bit vague
+    - I+ swarm science is really cool
+    - I+ I reckon the message is about emergence from interactions amongst diverse actors
