@@ -12,4 +12,4 @@ tom@raspberrypi:~.cybernetic-stream-table $ libcamera-jpeg --qt-preview on -o te
 
 ### Test Outcome
 PS Don't forget Bhuthu!!
-![Group Photo](src/2024-09-26_Bhuthu.jpg)
+![Group Photo](../src/2024-09-26_Bhuthu.jpg)
