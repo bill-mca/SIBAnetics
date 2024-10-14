@@ -1,4 +1,3 @@
-import os
 import speech_recognition as sr
 from pydub import AudioSegment
 
@@ -49,7 +48,10 @@ def main(input_wav_file):
         print("Failed to load audio.")
 
 if __name__ == "__main__":
-    input_wav_file = r"C:\Users\izaka\LipCoordNet\testing\j.wav"  # Specify the input WAV file path
+    import sys
+    import os
+    
+    input_wav_file = sys.argv[1]
     if not os.path.exists(input_wav_file):
         print(f"Input file '{input_wav_file}' does not exist.")
     else:
