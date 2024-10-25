@@ -17,6 +17,7 @@ INFO SECTION
 # ESP32 URL
 URL = "http://192.168.0.4"
 AWB = True
+processed_save_path = '../socket_test/image.jpg'
 
 # Face recognition and opencv setup
 cap = cv2.VideoCapture(URL + ":81/stream")
@@ -135,6 +136,8 @@ if __name__ == '__main__':
             cv2.imshow("Yellow stuff!", frame)            
             #cv2.imwrite("cv2-object-{}.jpg".format(objectCounter), 
             #            yellow_bounded)
+            #bgr_bounded = cv2.cvtColor(frame, cv2.COLOR_HSV2BGR)
+            cv2.imwrite(processed_save_path, frame)
             
             key = cv2.waitKey(1)
 
