@@ -1,0 +1,4 @@
+websockets
+pillow
+flask
+asyncio

@@ -1,3 +1,5 @@
+#! /usr/bin/python3
+
 # This code is adapted from open-source code by Neumi
 # https://github.com/Neumi/esp32_camera_webstream
 
