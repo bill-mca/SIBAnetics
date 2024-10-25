@@ -20,7 +20,80 @@ AWB = True
 
 # Face recognition and opencv setup
 cap = cv2.VideoCapture(URL + ":81/stream")
-face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml') # insert the full path to haarcascade file if you encounter any problem
+
+def count_yellow_objects_on_cam(img):
+    objectCounter = 0
+
+    font = cv2.FONT_HERSHEY_SIMPLEX
+    fontScale = 1
+    fontThickness = 2
+    color = (0, 255, 0)
+
+    # Take a still that we will analyse
+    #img = picam2.capture_array()
+    #img_copy = img.copy()
+
+    ## Analyse
+
+    hsvFrame = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+
+    yellow_lower = np.array([15, 120, 120], np.uint8)
+    yellow_upper = np.array([30, 255, 255], np.uint8)
+    yellow_mask = cv2.inRange(hsvFrame, yellow_lower, yellow_upper)
+
+    # DOWNSCALE
+    # Taking a matrix of size 5 as the kernel
+    kernel = np.ones((5, 5), np.uint8)
+    eroded_mask = cv2.erode(yellow_mask, kernel, iterations=1)
+    dilated_mask = cv2.dilate(yellow_mask, kernel, iterations=8)
+    #cv2.imwrite("cv2-eroded-mask-test.png", eroded_mask)
+
+    ## Count
+
+    # from https://stackoverflow.com/questions/71491995/how-to-count-the-color-detected-objects-using-opencv/71492126#71492126
+
+    # Find the contours on the binary image:
+    contours, hierarchy = cv2.findContours(dilated_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+    # Store bounding rectangles and object id here:
+    objectData = []
+
+    # Look for the outer bounding boxes (no children):
+    for _, c in enumerate(contours):
+        # Get the contour's bounding rectangle:
+        boundRect = cv2.boundingRect(c)
+
+        # Store in list:
+        objectData.append((objectCounter, boundRect))
+
+        # Get the dimensions of the bounding rect:
+        rectX = boundRect[0]
+        rectY = boundRect[1]
+        rectWidth = boundRect[2]
+        rectHeight = boundRect[3]
+
+        # Draw bounding rect:
+        color = (0, 0, 255)
+        cv2.rectangle(img, (int(rectX), int(rectY)),
+                    (int(rectX + rectWidth), int(rectY + rectHeight)), color, 2)
+
+        # Draw object counter:
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        fontScale = 1
+        fontThickness = 2
+        color = (0, 255, 255)
+        cv2.putText(img, str(objectCounter), (int(rectX), int(rectY)),
+                    font, fontScale, color, fontThickness)
+
+        #cv2.imwrite("cv2-object-{}.png".format(objectCounter), img_copy)
+
+        # Increment object counter
+        objectCounter += 1
+        
+    #print(objectCounter)
+    cv2.putText(img, str(objectCounter), (100, 100),
+                    font, fontScale, color, fontThickness)
+    return(objectCounter, img)
 
 def set_resolution(url: str, index: int=1, verbose: bool=False):
     try:
@@ -57,17 +130,12 @@ if __name__ == '__main__':
         if cap.isOpened():
             ret, frame = cap.read()
 
-            if ret:
-                gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-                gray = cv2.equalizeHist(gray)
+            objectCounter, yellow_bounded = count_yellow_objects_on_cam(frame)
 
-                faces = face_classifier.detectMultiScale(gray)
-                for (x, y, w, h) in faces:
-                    center = (x + w//2, y + h//2)
-                    frame = cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 255, 0), 4)
-
-            cv2.imshow("frame", frame)
-
+            cv2.imshow("Yellow stuff!", frame)            
+            #cv2.imwrite("cv2-object-{}.jpg".format(objectCounter), 
+            #            yellow_bounded)
+            
             key = cv2.waitKey(1)
 
             if key == ord('r'):
