@@ -1,0 +1,5 @@
+opencv-python
+webrtcvad
+pyaudio
+ffpyplayer
+wave
