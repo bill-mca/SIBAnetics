@@ -1,0 +1,6 @@
+dlib
+imutils
+argparse
+opencv-python
+numpy
+scipy

@@ -39,7 +39,7 @@ ap.add_argument("-w", "--webcam", type=int, default=0,
 args = vars(ap.parse_args())
 
 # define one constants, for mouth aspect ratio to indicate open mouth
-MOUTH_AR_THRESH = 0.79
+MOUTH_AR_THRESH = 0.65
 
 # initialize dlib's face detector (HOG-based) and then create
 # the facial landmark predictor
@@ -52,23 +52,30 @@ predictor = dlib.shape_predictor(args["shape_predictor"])
 
 # start the video stream thread
 print("[INFO] starting video stream thread...")
-vs = VideoStream(src=args["webcam"]).start()
+
+# ESP32 URL
+URL = "http://192.168.0.4:81/video"
+processed_save_path = './image.jpg'
+
+# Face recognition and opencv setup
+cap = cv2.VideoCapture(URL)
+# vs = VideoStream(src=args["webcam"]).start()
 time.sleep(1.0)
 
 frame_width = 640
 frame_height = 360
 
 # Define the codec and create VideoWriter object.The output is stored in 'outpy.avi' file.
-out = cv2.VideoWriter('outpy.avi',cv2.VideoWriter_fourcc('M','J','P','G'), 30, (frame_width,frame_height))
-time.sleep(1.0)
+#out = cv2.VideoWriter('outpy.avi',cv2.VideoWriter_fourcc('M','J','P','G'), 30, (frame_width,frame_height))
+#time.sleep(1.0)
 
 # loop over frames from the video stream
 while True:
 	# grab the frame from the threaded video file stream, resize
 	# it, and convert it to grayscale
 	# channels)
-	frame = vs.read()
-	frame = imutils.resize(frame, width=640)
+	frame = cap.read()
+	#frame = imutils.resize(frame, width=640)
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
 	# detect faces in the grayscale frame
@@ -91,7 +98,7 @@ while True:
 		# compute the convex hull for the mouth, then
 		# visualize the mouth
 		mouthHull = cv2.convexHull(mouth)
-		
+
 		cv2.drawContours(frame, [mouthHull], -1, (0, 255, 0), 1)
 		cv2.putText(frame, "MAR: {:.2f}".format(mar), (30, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
 
