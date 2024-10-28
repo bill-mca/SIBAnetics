@@ -20,7 +20,7 @@ AWB = True
 processed_save_path = '../socket_test/image.jpg'
 
 # Face recognition and opencv setup
-cap = cv2.VideoCapture(URL + ":81/stream")
+cap = cv2.VideoCapture(URL + ":81/video")
 
 def count_yellow_objects_on_cam(img):
     objectCounter = 0
