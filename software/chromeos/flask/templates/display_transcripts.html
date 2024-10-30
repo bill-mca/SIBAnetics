@@ -1,6 +1,19 @@
 <!doctype html>
 <title>Focussed Hearing</title>
-<h1 style="background-color:DodgerBlue;">Lip Reading Transcript: {{ lip_reading_transcript }}</h1>
-<h1 style="background-color:Tomato;">Audio Transcript: {{ audio_transcript }}</h1>
-<img src="src/image.jpg" alt="Italian Trulli">
-<iframe src=/image width="100%" height="300" title="Your webcam stream"></iframe>
+<body>
+<div id="feedLip" style="background-color:DodgerBlue; font-size: 40px;">I was so young when I was born</div><br>
+<div id="feedAudio" style="background-color:Tomato; font-size:40px;">I was so young when I was born</div><br>
+
+<iframe src=/image width="640" height="480" title="Your webcam stream"></iframe>
+
+<script>
+    const eventLip = new EventSource('/lip_reading_stream');
+    eventLip.onmessage = function(event) {
+        document.getElementById('feedLip').textContent = event.data;
+    };
+    const eventAudio = new EventSource('/audio_stream');
+    eventAudio.onmessage = function(event) {
+        document.getElementById('feedAudio').textContent = event.data;
+    };
+</script>
+</body>

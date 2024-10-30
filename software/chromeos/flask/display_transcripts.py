@@ -1,30 +1,47 @@
-from flask import Flask
-from flask import render_template
-from flask import render_template_string
-
-import asyncio
-#import websockets
-import binascii
+from flask import Flask, render_template, render_template_string, Response
+import os
+import time
 from io import BytesIO
 from PIL import Image
-from flask import Flask, Response
-from base64 import b64encode
 
+TEXT_FILE = 'audio_transcript.txt'
+last_modified_time = 0
 
 app = Flask(__name__)
 
-def generate():
+def read_audio_transcript():
+    with open('audio_transcript.txt', 'r') as file:
+        return file.read()
+
+def read_lip_reading_transcript():
+    with open('lip_reading_transcript.txt', 'r') as file:
+        return file.read()
+
+def generate_lip_reading_stream():
     global last_modified_time
     while True:
         current_modified_time = os.path.getmtime(TEXT_FILE)
         if current_modified_time != last_modified_time:
             last_modified_time = current_modified_time
-            yield f"data: {read_file()}\n\n"
-        time.sleep(1)  # Check every second
+            yield f"data: {read_lip_reading_transcript()}\n\n"
+        time.sleep(1.1)  # Check every second
 
-@app.route('/stream')
-def stream():
-    return Response(generate(), content_type='text/event-stream')
+@app.route('/lip_reading_stream')
+def lip_reading_stream():
+    return Response(generate_lip_reading_stream(), content_type='text/event-stream')
+
+@app.route('/audio_stream')
+def audio_stream():
+    return Response(generate_audio_stream(), content_type='text/event-stream')
+
+def generate_audio_stream():
+    global last_modified_time
+    while True:
+        current_modified_time = os.path.getmtime(TEXT_FILE)
+        if current_modified_time != last_modified_time:
+            last_modified_time = current_modified_time
+            yield f"data: {read_audio_transcript()}\n\n"
+        time.sleep(1.2)  # Check every second
 
 def get_image():
     while True:
