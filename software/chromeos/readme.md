@@ -12,3 +12,5 @@ The next step is to merge this code with one of the scripts that identifys speak
 ## opencv speaker
 This is based on some fragments of example code that I found. It is more deliberately trying to identify who is talking rather than if there is an open mouth on camera.
 
+## Flask
+A webserver that actively updates as information streams in from the ML models.

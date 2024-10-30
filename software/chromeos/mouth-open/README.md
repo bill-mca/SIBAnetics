@@ -1,11 +1,7 @@
 # mouth-open
 Detecting when a human's mouth is open
 
-## Referenced Code
-
-[Adrian Rosebrock - drowsiness detection](https://www.pyimagesearch.com/2017/05/08/drowsiness-detection-opencv/)
-
-I was interested in implementing a similar function for calculating the aspect ratio of the mouth instead of both eyes. 
+Forked from MIT licesed [code by Mauck](https://github.com/mauckc/mouth-open/tree/master).
 
 ## Dependencies
 Python modules for:
@@ -25,9 +21,9 @@ python detect_open_mouth.py
 
 [dlib shape predictor](https://github.com/AKSHAYUBHAT/TensorFace/blob/master/openface/models/dlib/shape_predictor_68_face_landmarks.dat)
 
-![sample gif](./video/mouth_open.gif)
+![sample gif](https://github.com/mauckc/mouth-open/raw/master/video/mouth_open.gif)
 
-![sample gif](./video/facial_landmarks_68markup-768x619.jpg)
+![sample gif](https://github.com/mauckc/mouth-open/raw/master/video/facial_landmarks_68markup-768x619.jpg)
 
 
 ![trump-mouth](./video/out_trump.gif)
