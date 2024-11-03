@@ -9,7 +9,7 @@
  - Bill McAlister
  - Amanda Topaz
 
-[The Focused Hearing development team. From Left to right, Bill, Amanda, Shi and Izak.](src/fh_team.jpg)
+![The Focused Hearing development team. From Left to right, Bill, Amanda, Shi and Izak.](src/fh_team.jpg)
 
 # Objective of prototype 
 
@@ -37,7 +37,9 @@ Objective:
 ## Desired
  - Use the aligned message to suppress background noise in an audio feed sent to the user's earing aids or noise canceling headphones. 
 
-# Architecture
+# Prototype Architecture
+
+Give an overview of how it works. Describe how the bits depend on each other. 
 
 ![The physical and software components comprising Focused Hearing and how information flows between them](src/architecture.png)
 
@@ -48,9 +50,9 @@ Below is a diagram illustrating the relationship between the different software 
     
 ### Lip Reading Model
 
-### Speech to Text Model
+### Audio to Text Model
 
-### Alignment Model
+### Alignment Algorithm
 
 The alignment model is a customised [Needleman-Wunsch algoritm](https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm).
 
@@ -59,34 +61,42 @@ The alignment model is a customised [Needleman-Wunsch algoritm](https://en.wikip
 Video is recorded using python's [Open-CV library](https://pypi.org/project/opencv-python/)
 Audio Is recorded with the [pyAudio library](https://pypi.org/project/PyAudio/)
 
+### SMB Daemon
 
-### Communication Software
+### Socket communications
+
+### VPN
 
 It was also necessary to establish a [Virtual Private Network](https://en.wikipedia.org/wiki/Virtual_private_network) (VPN) amongst the devices as the ANU WiFi network has a restrictive firewall that blocks SMB and socket communication. The [Tailscale](https://tailscale.com) service helps to
 
 
-### Web Host
+### Flask Website Host
 
 The reults of Focused Hearing are displayed back to the user through a custom web host. 
 
-## Physical components
+## Physical components, materials and tools
 
 > Offer a breakdown of the physical components used in your prototype, elucidating their roles and interactions.
 
-### Izak's Laptop
-### Raspberry Pi
-### Camera
-### Battery
-### Headset
-### USB Microphone
-### Screen
-### Button
-### LEDs
-### WiFi
+### Focussed Hearing Server 
 
-# Materials and tools
+Izak's Laptop
 
-> Enumerate the materials and tools used in constructing the prototype, providing a comprehensive list for easy reference. 
+### Focussed Hearing Device 
+
+Raspberry Pi
+camera
+usb mic
+button
+LEDs
+VR headset
+Case for the Buttons
+
+### Display device
+
+ > (@Bill) I feel that we are still a little bit vague on how to implement this. 
+
+### Wifi
 
 # Process of making the prototype 
 
@@ -112,7 +122,6 @@ The reults of Focused Hearing are displayed back to the user through a custom we
 
 > Present a step-by-step description guiding users on how to interact with the prototype. This should encompass various modes of engagement and highlight the user experience.
 
- - Maybe we should make a video of this early next week?
  - Getting some stills to include in the document would be good.
 
 # References
