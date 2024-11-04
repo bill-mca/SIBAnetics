@@ -144,7 +144,7 @@ Tools and materials used:
  - Camera
  - USB mic
 
-> (Bill) We need a couple of photos of the inside of the device
+> (@Bill) We need a couple of photos of the inside of the device
 
 ### Focussed Hearing Server 
 
@@ -162,31 +162,51 @@ Another important physical element of focused hearing is network infrastructure.
 
 > Provide an overview of the development process, highlighting key milestones, challenges faced, and solutions implemented.
 
-## Training the Lip-Reading Model
+Miletones:
+ - Core software complete
+ - Raspberry Pi collects data for server to process
+ - Physical devices built
 
-## Deploying the Speech to Text Model
+Challenges:
+ - Raspberry Pi can't do Inference of the lip reading model
+ - Lip reading model doesn't perform well on unseen data
+ - Lip reading model too slow to run inferences in real time.
+ - Couldn't miniaturise because of a couple of roadblocks
 
-## Developing the Alignment Model
+## Core Software
 
-## Developing the Recording Software
+### Training the Lip-Reading Model
 
-## Developing the Communication Software
+### Developing the Alignment Algorithm
 
-## Developing the Web Host
+## Splitting across devices
 
-## Developing a Physical Interface
+### Developing the Recording Software
 
-## Building the Physical Prototype 
+### Developing the Communication Software
+
+### Developing the Web Host
+
+## Physical build
+
+### Developing a Physical Interface to the Prototype device
+
+### Building the enclosures for the Physical Prototype 
+
+### Miniaturisation
 
 # Step-by-step interaction guide 
 
 > Present a step-by-step description guiding users on how to interact with the prototype. This should encompass various modes of engagement and highlight the user experience.
 
  - Getting some stills to include in the document would be good.
+ - Notice whether the lip-reading model better discriminates what was said by you then what was said by those in the background.
 
 # References
 
 > cite any external sources, references, or inspirations that contributed to the development of your prototype.
+
+ - Should this List include all the software?
 
 # Acknowledgment
 
