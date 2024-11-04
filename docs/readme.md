@@ -4,6 +4,7 @@
 
 > Clearly list and credit all individuals involved in the creation of the prototype.
 
+Focused Hearing was made by:
  - Shi Pui Ng
  - Izak Lindsay
  - Bill McAlister
@@ -17,29 +18,49 @@
 
 Focused Hearing is an alternative to AI-assisted hearing aids. Speech recognition in a noisy environment can be challenging. Rather than trusting an algorithm to decide what constitutes background noise, the user can focus on the mouth of the speaker they wish to hear, and through cross modal fusion <ref> of a lip reading and speech recognition model, be given the data they need. In our view this leverages our natural habit of looking at the person that we want to hear rather than conceding agency to an AI to decide what is noise.
 
-**Focused Hearing Objective: **
-    Enable hearing impaired people to communicate naturally in noisy environments.
+**Focused Hearing Objective:** Enable hearing impaired people to communicate naturally in noisy environments.
     
-**Prototype Objective: **
-    Demonstrate the viability of the technologies that underpin focused hearing by producing a minimally functional version.
+**Prototype Objective:** Demonstrate the viability of the technologies that underpin focused hearing by producing a minimally functional version.
     
-
 # List of (desired/fulfilled) functions
 
 > Specify both desired and fulfilled functions of the prototype. Detail how each function is implemented, including sensing, actuation, computation, and machine learning.
 
-## Fulfilled
- - Transcribe English language from audio data of speakers.
- - Compare transcripts originating from different data sources to infer whether the incoming message is background noise or not.
- - Display transcripts to the user in a way that helps them understand their speaking partner.
-    
-## Partly Fulfilled
- - Transcribe English language from silent video data of speakers.
- - Transcribe speaker's in real time.
- - Make the device wearable on the head so that the direction of gaze naturally controls the information drawn from the environment.
+## Fulfilled Functions
 
-## Desired
- - Use the aligned message to suppress background noise in an audio feed sent to the user's earing aids or noise canceling headphones. 
+### Prouce Transcripts from Audio 
+
+**Function:** Produce Transcripts from audio recordings of speech.
+
+
+
+### Compare Transcripts 
+
+**Function:** Compare transcripts originating from different data sources to infer whether the incoming message is background noise or not.
+
+### Display Transcripts 
+
+**Function:** Display transcripts to the user in a way that helps them understand their speaking partner.
+    
+## Partly Fulfilled Functions
+
+### Lip-Reading Transcripts
+
+**Function:** Transcribe English language from silent video data of speakers.
+
+### Transcribe speakers in real time.
+
+**Function:** Video and audio transcriptions are both instantaneous so that a user can get transcripts of their speaking partner while interacting.
+
+### Wearable
+
+**Function:** Make the device wearable on the head so that the direction of gaze naturally controls the information drawn from the environment.
+
+## Desired Functions
+
+### Audio Manipulation 
+
+**Function:** Use the aligned message to suppress background noise in an audio feed sent to the user's earing aids or noise canceling headphones.
 
 # Prototype Architecture
 
@@ -148,8 +169,9 @@ Tools and materials used:
 
 ### Wiring
 
+Below is the code used to Initialise the GPIO pins.  
 
-```
+```python
 # GPIO setups
 BUTTON_PIN = 2
 GPIO.setmode(GPIO.BCM)
@@ -160,7 +182,16 @@ GPIO.setup(23, GPIO.OUT)  # Active LED
 GPIO.setup(22, GPIO.OUT)  # Process LED
 ```
 
+GPIO 2 is used as an input and is wired to the button. The other terminal of the button is wired to a ground pin. GPIO 18 outputs current to the red LED to indicate that recording is underway. GPIO 23 outputs current to the Green LED to indicate that the recording software is active and that button pushes will be acknowledged. Finally, GPIO 22 outputs current to a blue LED to indicate that the server is currently processing the most recent recording. The negative terminal of each of the LEDs is wired to a ground pin via a 220K ohm resistor. The diagram below shows where each of the above input and output pins is located on the Raspberry Pi 4B. Note that GPIO 18 is located on pin 12, GPIO 22 on pin 15 etc.
+
+![A schematic of the pin functions on the Raspberry Pi 4B](src/pi_gpios.png) 
+
+This photo shows the wiring scheme of the prototype device.
+
+![A photo of the wiring of the prototype device]( 
+
 > (@Bill) We need a couple of photos of the inside of the device
+> (@Bill) We need a couple of photos of the inside of the device.
 
 ### Focussed Hearing Server 
 
@@ -191,28 +222,6 @@ Challenges:
  - Lip reading model too slow to run inferences in real time
  - Couldn't miniaturise because of a couple of roadblocks
 
-## Core Software
-
-### Training the Lip-Reading Model
-
-### Developing the Alignment Algorithm 
-
-## Splitting across devices
-
-### Developing the Recording Software
-
-### Developing the Communication Software
-
-### Developing the Web Host
-
-## Physical build
-
-### Developing a Physical Interface to the Prototype device
-
-### Building the enclosures for the Physical Prototype 
-
-### Miniaturisation
-
 # Step-by-step interaction guide 
 
 > Present a step-by-step description guiding users on how to interact with the prototype. This should encompass various modes of engagement and highlight the user experience.
@@ -224,6 +233,9 @@ Challenges:
 
 > cite any external sources, references, or inspirations that contributed to the development of your prototype.
 
+ - Grid corpus dataset
+ - Cross-modal fusion
+ - 
  - Should this list include all the software?
 
 # Acknowledgment
