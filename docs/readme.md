@@ -30,7 +30,7 @@ Focused Hearing is an alternative to AI-assisted hearing aids. Speech recognitio
 
 ### Prouce Transcripts from Audio 
 
-**Function:** Produce Transcripts from audio recordings of speech.
+**Function:** Produce transcripts from audio recordings of speech.
 
 
 
@@ -38,15 +38,23 @@ Focused Hearing is an alternative to AI-assisted hearing aids. Speech recognitio
 
 **Function:** Compare transcripts originating from different data sources to infer whether the incoming message is background noise or not.
 
+
+
 ### Display Transcripts 
 
 **Function:** Display transcripts to the user in a way that helps them understand their speaking partner.
-    
+
+
+
+![Screenshot of the Focused Hearing Web Server](src/web_server.png)
+
 ## Partly Fulfilled Functions
 
 ### Lip-Reading Transcripts
 
 **Function:** Transcribe English language from silent video data of speakers.
+
+
 
 ### Transcribe speakers in real time.
 
@@ -56,11 +64,17 @@ Focused Hearing is an alternative to AI-assisted hearing aids. Speech recognitio
 
 **Function:** Make the device wearable on the head so that the direction of gaze naturally controls the information drawn from the environment.
 
+In producing this prototype we've had a chance to experiment with making wearable tech. To be wearable, the device must be small and incospicuous. A very important factor in reducing the size of the device is power consumption. DEvices that consume a lot of power require large batteries. 
+
+The prototype device is built with a raspberry pi which is a pocket-sized circuit board. As demonstrated by our VR headset enclosure, it is possible to wear a Raspberry Pi on the head. The Requires 15W of power to reliably run. This means only substantial powerbank batteries were adequate to power it for the 3 hour duration of Demo Day. With its sizable form factor and large battery the Focused Hearing prototype was undeniably conspicuous when worn on the head.
+
 ## Desired Functions
 
 ### Audio Manipulation 
 
 **Function:** Use the aligned message to suppress background noise in an audio feed sent to the user's earing aids or noise canceling headphones.
+
+
 
 # Prototype Architecture
 
@@ -209,24 +223,47 @@ Another important physical element of focused hearing is network infrastructure.
 
 > Provide an overview of the development process, highlighting key milestones, challenges faced, and solutions implemented.
 
+## Milestones
+
 There were three major milestones in the development of Focused Hearing. Loosely ordered, those milestones were:
  1. Core software complete
  2. Raspberry Pi collects data for server to process
  3. Physical devices built
 
 Development of the core software (the machine learning models and the alignment algorithm) was undertaken as a first step. Once the core software was working, the functions were split across two different devices. A Pi was set up to collect the data and send it to the server. Finally, Having all the software that was needed, we worked to enclose the prototype device into a VR headset.
-    
-Challenges:
- - Raspberry Pi can't do inference of the lip reading model
- - Lip reading model doesn't perform well on unseen data
- - Lip reading model too slow to run inferences in real time
- - Couldn't miniaturise because of a couple of roadblocks
+
+## Challenges and Solutions
+
+### Raspberry Pi can't run the Lip Reading Model
+
+[One of our initial ideas](https://github.com/bill-mca/SIBAnetics/blob/docs/docs/proposed_architecture.md#minimum-viable-product) for a minimal viable product was to use a Raspberry Pi to do all of the computation for Focussed Hearing. This would've saved the effort of establishing communication software and learning about networking protocols. The lip reading model requires a GPU to execute quickly and it became apparent during our initial tests that the Raspberry Pi's light CPU would take hours to make a lip-reading inference of a 5 second video clip. We tackled this challenge by establishing a client-server architecture [which was originally intended to be a stretch architecture](https://github.com/bill-mca/SIBAnetics/blob/docs/docs/proposed_architecture.md#fast-transcript) that we would build after reaching the MVP.
+
+### Lip reading model doesn't perform well on unseen data
+
+We didn't expect that the lip-reading model would perform well with words outside its vocabulary. Nevertheless this was a limitation of the final product. The training data used was quie uniform and restricted to a very small vocabulary. When testing the 
+
+
+### Lip reading model too slow to run inferences in real time
+### Couldn't miniaturise because of a couple of roadblocks
 
 # Step-by-step interaction guide 
 
 > Present a step-by-step description guiding users on how to interact with the prototype. This should encompass various modes of engagement and highlight the user experience.
 
- - Getting some stills to include in the document would be good.
+> (@Bill) Getting some stills to include in the document would be good.
+
+### Step 1: Sit and look into the camera
+
+### Step 2: Push the button
+
+### Step 3: Say a message
+
+### Step 4: Wait for the message to be transcribed
+
+### Step 5: Read the transcriptions
+
+### Step 6: Repeat if you'd like.
+
  - Notice whether the lip-reading model better discriminates what was said by you then what was said by those in the background.
 
 # References
