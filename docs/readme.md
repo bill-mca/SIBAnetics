@@ -5,6 +5,7 @@
 > Clearly list and credit all individuals involved in the creation of the prototype.
 
 Focused Hearing was made by:
+
  - Shi Pui Ng
  - Izak Lindsay
  - Bill McAlister
@@ -32,33 +33,43 @@ Focused Hearing is an alternative to AI-assisted hearing aids. Speech recognitio
 
 **Function:** Produce transcripts from audio recordings of speech.
 
+Speakers produce transcripts from audio. Speakers are recorded through the microphone in the Prototype device. This is the sensing component of Focused Hearing. Speech-to-text is a well-researched problem in machine learning. There are many off-the-shelf models available that can transcribe speech into text in real-time. This function sits mid-way along the computational pipeline of Focused Hearing. It does not interface directly with sensors or actuators but instead takes abstract data in one form and transforms it to another form. 
 
+In the prototype, computation of this speech-to-text component is performed by a remote server. Audio data is sent over the internet to Google servers to produce the transcript.
 
 ### Compare Transcripts 
 
 **Function:** Compare transcripts originating from different data sources to infer whether the incoming message is background noise or not.
 
+Comparison of transcripts is achieved with conventional algorithms and does not require any machine learning. This function is also deep in the computation pipeline of Focused Hearing. Abstract data has been collected by the Raspberry Pi's camera and the Raspberry Pi's microphone and transformed by machine learning algorithms before being synthesised by the alignment algorithm.
 
+In practice, the alignments resulting from this model are nearly always poor quality but this is due to the limitations of the lip reading model as discussed below. Effectively, this function was fulfilled for words within the vocabulary of the lip-reading model. However, because the limiting factor is limitations in the lip-reading model, e've put it down as a fulfilled function. 
+
+See the section on the Needleman-Monch algorithm below for more details about how this function was implemented.
 
 ### Display Transcripts 
 
 **Function:** Display transcripts to the user in a way that helps them understand their speaking partner.
 
+we successfully implemented this function. Using [Python's Flask library](https://pypi.org/project/Flask/), we established a web server that effectively displays transcripts to the user in a way that is easily interpretable. In real time, the server updates a web page to display transcripts from the lip-reading model, the audio transcription model and the alignment algorithm. This web page can be thought of as the actuation component of Focused Hearing, where a screen displays information that the hearing-impaired individual would not have been able to glean from their environment.
 
-
-![Screenshot of the Focused Hearing Web Server](src/web_server.png)
+![Screenshot of the Focused Hearing web page.](src/web_page.jpg)
 
 ## Partly Fulfilled Functions
 
 ### Lip-Reading Transcripts
 
-**Function:** Transcribe English language from silent video data of speakers.
+**Function:** Transcribe English text from silent video data of a person speaking.
 
+Using a custom neural network that we trained on publicly available data, we successfully created a model that can transcribe English by lip-reading. However, there are serious limitations to the model that we created. It only understands words from its training dataset, which was very restricted. It is also poor at recognising when a speaker is not speaking. Because it is very computationally intensive, it could not be implemented in real-time. The lip-reading model was part of the computational elements, it was midway down the pipeline of information flow in focused hearing.
 
+For more information about this function, see the 'Lip-Reading Model' section under 'Software Components'. Also, see the 'Challenges and Solutions' section below. 
 
 ### Transcribe speakers in real time.
 
 **Function:** Video and audio transcriptions are both instantaneous so that a user can get transcripts of their speaking partner while interacting.
+
+This function was partly fulfilled. It was easy to get the audio transcription fast enough to be real-time, but it was not possible to get the lip-reading transcripts to generate in real-time. This is because of how computationally intensive lip-reading is. It requires neural network inferences to be run on time series in two dimensions. Before it can be run, these coordinates need to be extracted from images. Because of this limitation, the design of focused hearing for the prototype had to be altered in such a way as to demonstrate how the technology works, but only use short messages and have a delay between recording and display of the final transcript.
 
 ### Wearable
 
@@ -74,7 +85,9 @@ The prototype device is built with a raspberry pi which is a pocket-sized circui
 
 **Function:** Use the aligned message to suppress background noise in an audio feed sent to the user's earing aids or noise canceling headphones.
 
-
+The ultimate goal of focused hearing is to return agency to users of modern hearing aids. In order to replace the main function of hearing aids, the output of focused hearing needs to be a manipulated audio stream. It was clear to us from the outset that this function would be beyond our capacity to fulfill within the time frame of taking information from the alignment algorithm about which of the speakers is being looked at by the hearing-impaired individual, and then using that to manipulate the sounds greatly increases the complexity of the architecture of focused hearing.
+An audio segmentation component, which is not currently part of the design, would need to be brought in. It would also need to be a new actuator in the form of noise cancelling Bluetooth earbuds or hearing aids. Because of the immense increase in components required to implement this function, we decided not to do it.
+We felt that the minimum viable product, displaying text transcripts to the user, still fulfilled our objective of allowing hearing-impaired individuals to interact naturally. However, it is clear that to fulfill this objective to the greatest degree and in the most contexts, it would be necessary to add an audio manipulation function to focused hearing.
 
 # Prototype Architecture
 
@@ -88,7 +101,7 @@ The ultimate objective for natural interaction would be for focused hearing to b
 
 The section below will describe in more detail the software components of focused hearing, the physical components of focused hearing, and how each of these were made and the tools and materials that were used to produce them.
 
-![The physical and software components comprising Focused Hearing and how information flows between them](src/architecture.png)
+![The physical and software components comprising Focused Hearing and how information flows between them.](src/architecture.png)
 
 ## Software Components
 
@@ -165,7 +178,8 @@ The VR headset that we used was designed to fit a mobile phone and for the mobil
 
 This device also includes a small and simple physical interface to the user. The interface consists of three different colored LEDs and a small button and a 3D printed enclosure for the interface. The design for the enclosure is available as a CAD model at the following link. The physical interface is connected to the prototype device by a hidden wire that plugs directly to the GPIO pins of the Raspberry Pi.
 
-Tools and materials used:
+**Tools and materials used:**
+
  - A VR headset
  - Hot glue gun
  - Spray paint
@@ -198,7 +212,7 @@ GPIO.setup(22, GPIO.OUT)  # Process LED
 
 GPIO 2 is used as an input and is wired to the button. The other terminal of the button is wired to a ground pin. GPIO 18 outputs current to the red LED to indicate that recording is underway. GPIO 23 outputs current to the Green LED to indicate that the recording software is active and that button pushes will be acknowledged. Finally, GPIO 22 outputs current to a blue LED to indicate that the server is currently processing the most recent recording. The negative terminal of each of the LEDs is wired to a ground pin via a 220K ohm resistor. The diagram below shows where each of the above input and output pins is located on the Raspberry Pi 4B. Note that GPIO 18 is located on pin 12, GPIO 22 on pin 15 etc.
 
-![A schematic of the pin functions on the Raspberry Pi 4B](src/pi_gpios.png) 
+![A schematic of the pin functions on the Raspberry Pi 4B.](src/rpi_gpios.png) 
 
 This photo shows the wiring scheme of the prototype device.
 
@@ -234,17 +248,17 @@ Development of the core software (the machine learning models and the alignment 
 
 ## Challenges and Solutions
 
+### Lip reading model doesn't perform well on unseen data
+
+We didn't expect that the lip-reading model would perform well with words outside its vocabulary. Nevertheless this was a limitation of the final product. The training data used was quie uniform and restricted to a very small vocabulary. When testing the performance of the lip-reading model, it was clear that it rarely recognises words that were not in its training dataset. We didn't have the resources to make a more sophisticated lip-reading model so our solution to this was simply to encourage users on Demo Day to try using words from the model's vocabulary as part of testing the performance of the device.  
+
 ### Raspberry Pi can't run the Lip Reading Model
 
 [One of our initial ideas](https://github.com/bill-mca/SIBAnetics/blob/docs/docs/proposed_architecture.md#minimum-viable-product) for a minimal viable product was to use a Raspberry Pi to do all of the computation for Focussed Hearing. This would've saved the effort of establishing communication software and learning about networking protocols. The lip reading model requires a GPU to execute quickly and it became apparent during our initial tests that the Raspberry Pi's light CPU would take hours to make a lip-reading inference of a 5 second video clip. We tackled this challenge by establishing a client-server architecture [which was originally intended to be a stretch architecture](https://github.com/bill-mca/SIBAnetics/blob/docs/docs/proposed_architecture.md#fast-transcript) that we would build after reaching the MVP.
 
-### Lip reading model doesn't perform well on unseen data
+### Lip-reading model too intensive to run inferences in real time
 
-We didn't expect that the lip-reading model would perform well with words outside its vocabulary. Nevertheless this was a limitation of the final product. The training data used was quie uniform and restricted to a very small vocabulary. When testing the 
-
-
-### Lip reading model too slow to run inferences in real time
-### Couldn't miniaturise because of a couple of roadblocks
+Even on a powerful computer with a sizeable GPU, processing a 3-second video with the lip-reading model takes a little bit more than 3 seconds. Because of this it was not possible to transcribe speakers on-the-fly as was originally intended. We discussed several possible solutions to this problem including more parralelisation, creating a processing backlogor even hiring a cloud server so that we would have even more computing power! However, time was our most stringent limitation and it was hard to say how much of our development time would need to be invested to accomplish each of the aforementioned solutions. Our chosen solution, which was the safest option given the circumstances, was to drop live transcription as a goal for Demo Day.
 
 # Step-by-step interaction guide 
 
@@ -254,17 +268,30 @@ We didn't expect that the lip-reading model would perform well with words outsid
 
 ### Step 1: Sit and look into the camera
 
+The prototype device is set up on a desk with a chair in front. Sit down at the chair and look directly towards the headset mounted on the bust. This is important so that the camera is trained on your lips and you are within earshot of the microphone.
+
 ### Step 2: Push the button
+
+In front of you on the desk there's a small button which will activate the device. You push the button briefly and the red light should come on to indicate that a recording is being made. 
 
 ### Step 3: Say a message
 
+The next step is to say a message into the microphone while looking directly into the eyes of the bust.
+It is recommended that you use words from the training data set for the lip-reading model. This way there should be good congruence between the two messages that are transcribed by the two machine-learning models.
+
 ### Step 4: Wait for the message to be transcribed
+
+The red LED will turn off after 3 seconds. Your recording is finished and the blue light should come on to indicate that the message is now being processed. You may have to wait several seconds before the message will be displayed. 
 
 ### Step 5: Read the transcriptions
 
-### Step 6: Repeat if you'd like.
+Once the message has finished being processed the blue light will turn off and you'll see the message displayed on the screen behind you. There should be three messages, one in yellow that indicates what was aligned from both the lip reading and the audio transcript and the other two showing each of the transcripts from the lip-reading and speech-to-text models.
 
- - Notice whether the lip-reading model better discriminates what was said by you then what was said by those in the background.
+Read the transcripts and see how accurate they are. Which is better? Ask yourself whether the lip reading model has transcribed less of the background noise than the audio transcript?
+
+### Step 6: Repeat and play around
+
+You're welcome to repeat the process several times and try different types of messages. You might try looking away from the camera or covering your mouth. You could have a friend stand off-camera and speak loudly to test if the lip-reading model acurately dicriminates. You might try using exclusively words from the training data set or some words that are similar to words in the training data set.
 
 # References
 
@@ -273,7 +300,7 @@ We didn't expect that the lip-reading model would perform well with words outsid
  - Grid corpus dataset
  - Cross-modal fusion
  - 
- - Should this list include all the software?
+ - I'll build this with Zotero. I'll include all the hyperlinks as citations
 
 # Acknowledgment
 
